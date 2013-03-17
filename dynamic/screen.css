@@ -1,0 +1,37 @@
+
+/* imp styles. */
+/*********************************************************/
+/*
+ * imp/themes/theme/dynamic/screen.css
+ */
+
+
+/* Message ViewPort */
+/* Rows */
+div.msglist .vpRowHoriz.flagAnswered { /* this is overidden by imp/lib/Flag/Imap/Answered.php */
+    background-color: #B10;
+}
+
+div.vpRowSelected {
+    background-color: #030 !important;
+    color: #fff;
+}
+
+div.vpRowSelected .msgflags.flagAnswered {
+    background-image: url("../graphics/flags/answered-inv.png");
+}
+
+
+/* Headers styles. */
+.msgHeaders {
+    padding: 10px 6px 10px 4px;
+    background-color: #000; 
+    border-bottom: 1px solid #d0d0d0;
+    max-height: 300px; /* CHANGE */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.msgHeaders a {
+    color: #0A0; /* CHANGE */
+}
