@@ -23,8 +23,8 @@ div.msglist .vpRowHoriz.flagAnswered.vpRowSelected div{
 /* Headers styles. */
 .msgHeaders {
     padding: 10px 6px 10px 4px;
-    background-color: #000; 
-    border-bottom: 1px solid #d0d0d0;
+    background-color: #010; 
+    border-bottom: 1px solid #020;
     max-height: 300px; /* CHANGE */
     overflow-x: hidden;
     overflow-y: auto;
@@ -43,4 +43,8 @@ div.msglist .vpRowHoriz.flagAnswered.vpRowSelected div{
 /* Mini calendar */
 .kronolith-minical {
     background-color: #020;
+}
+
+.kronolithDialog {
+    border: 1px #040 solid;
 }

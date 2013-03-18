@@ -22,12 +22,12 @@ body {
 }
 
 .horde-new {
-    height: 29px;
     background-image: none;
     background-repeat: repeat-x;
     border-bottom: 1px solid #787878;
     overflow: hidden;
-    font-size: 140%;
+    font-size: 100%;
+line-height: 150%;
     font-weight: bold;
     color: #0D0;
     text-shadow: -1px -1px 0px #000;
@@ -50,8 +50,8 @@ a.horde-mainnavi:link, a.horde-mainnavi:visited, a.horde-mainnavi:active {
     display: block;
     color: #0A0;
 }
-
 .horde-dropdown ul {
+    background: #020;
     background-color: #020;
     border: 1px solid #040;
 }
@@ -119,6 +119,23 @@ background-image: none;
     background-color: #030;  /* CHANGE */
 }
 
+.horde-buttonbar, .horde-buttonbar a, .horde-buttonbar a:link,
+.horde-buttonbar a:visited, .horde-buttonbar a:active {
+    color: #0A0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.horde-buttonbar li:hover, .horde-buttonbar li.horde-active {
+    background-repeat: no-repeat, repeat-x;
+    background-image: none;
+    background-color: #040;  /* CHANGE */
+}
+
+.horde-form-buttons {
+    background-color: #020;
+}
+
 /* Horde UI standard tables */
 .horde-table-header, table.horde-table thead tr {
     background-image: none;
@@ -127,6 +144,23 @@ background-image: none;
 .horde-table-header a, table.horde-table thead a {
     color: #0A0;
 }
+/* Main body. */
+#horde-body {
+    border-bottom: 1px solid #050;
+}
+
+.headerbox {
+    border: 1px solid #060;
+    border-top-width: 0;
+    background: #040;
+    color: #0E0;
+}
+#horde-sidebar .horde-new-link a, .horde-new-link a {
+    padding-left: 28px;
+    margin: 5px 10px 0 10px;
+    color: #0B0;
+}
+
 
 .horde-table-header div {
     background-color: #050;  /* CHANGE */
@@ -146,6 +180,8 @@ table.horde-table thead .horde-split-right {
     background-color: #010;
 }
 
+
+a ,
 #horde-date,
 #horde-info,
 #horde-info a {
@@ -163,6 +199,25 @@ table.horde-table thead .horde-split-right {
     background-color: #0A0;  /* CHANGE */
 }
 
+select option ,
+.mimePartInfo div ,
+.mimeStatusMessageTable {
+    background: #020;
+    border: 1px solid #030;    
+color: #0A0;
+}
+
+.mimePartWrap, .mimePartWrapValid, .mimePartWrapInvalid {
+    border: 1px solid #020;
+}
+
+input[type="submit"], input[type="button"], input[type="reset"],
+a.horde-button, a.horde-default, a.horde-delete {
+    background-image: none;
+    background-repeat: repeat-x;
+    border: 1px solid #020;
+    color: #0A0;
+}
 /* kronolith styles. */
 /*********************************************************/
 /*
@@ -176,7 +231,7 @@ table.horde-table thead .horde-split-right {
 }
 .kronolithMonthDay div.kronolith-event[style] 
 {
-    background-color: #030 !important ; /* CHANGE */
+    background-color: #0A0 !important ; /* CHANGE */
 } 
 table.kronolith-view 
 {
@@ -220,6 +275,12 @@ border-style:dotted solid double dashed;
     background-color: #040;
 }
 
+/* Event/task form dialogs */
+.kronolithDialog {
+    background-color: #020;
+    border: 1px #040 solid;
+}
+
 /* address book styles. */
 /*********************************************************/
 /*
@@ -240,11 +301,18 @@ border-style:dotted solid double dashed;
 {
     color: #0A0;
 }
+
+.selected ,
 div.horde-resource-over[style],
 .text {
     color: #0A0 !important;
     background: #020 !important;
 }
+
+#horde-navigation {
+    color: #0A0;
+}
+
 .header ,
 .header a,
 .turbaPager ,
@@ -252,10 +320,12 @@ input.horde-default, a.horde-default ,
 .horde-resources div[style],
 input, select, textarea {
     background-image: none;
-    background-color: #000 !important;
+    background-color: #010 !important;
     border: 1px solid #020 !important;
     color: #0A0 !important;
 }
+
+.linedRow, tr.linedRow td, table.linedRow td, ul.linedRow li ,
 div.vpRow[style] ,
 div.vpRowSelected[style] {
     background-color: #000 !important;
