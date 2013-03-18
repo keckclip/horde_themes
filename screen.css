@@ -29,7 +29,7 @@ body {
     overflow: hidden;
     font-size: 140%;
     font-weight: bold;
-    color: #fff;
+    color: #0D0;
     text-shadow: -1px -1px 0px #000;
 }
 
@@ -104,18 +104,11 @@ background-image: none;
 }
 
 /* Slider. */
+.horde-splitbar-vert ,
+.horde-splitbar-horiz-handle , 
 .horde-splitbar-vert-handle {
-    display: none;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 8px;
-    background-image: url("graphics/slidevert.png");
+    background-image: none;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #040;  /* CHANGE */
-}
-.horde-splitbar-horiz-handle {
     background-color: #040;  /* CHANGE */
 }
 
@@ -135,6 +128,11 @@ background-image: none;
     color: #0A0;
 }
 
+.horde-table-header div {
+    background-color: #050;  /* CHANGE */
+    color: #0E0;
+    font-weight: bold;
+}
 .horde-table-header .horde-split-left,
 table.horde-table thead .horde-split-left,
 .horde-table-header .horde-split-right,
@@ -163,4 +161,112 @@ table.horde-table thead .horde-split-right {
 /* Style for HTML data iframe. */
 .htmlMsgData {
     background-color: #0A0;  /* CHANGE */
+}
+
+/* kronolith styles. */
+/*********************************************************/
+/*
+ * kronolith/themes/theme/screen.css
+ */
+
+/* Calendar styles. */
+.kronolithMonthDay  
+{
+    background-color: #030; /* CHANGE */
+}
+.kronolithMonthDay div.kronolith-event[style] 
+{
+    background-color: #030 !important ; /* CHANGE */
+} 
+table.kronolith-view 
+{
+    background-color: #060; /* CHANGE border */
+}
+table.kronolith-view td.kronolith-first-col,
+table.kronolith-view th.kronolith-first-col {
+    width: 21px;
+    background-color: #000; 
+    vertical-align: middle;
+/*    padding: 9px 0 0;*/
+}
+table.kronolith-view tr
+{
+/* CHANGE calendar*/
+    background-color: #000;
+}
+.kronolith-weekend, .kronolithViewDay .kronolith-weekend {
+/* CHANGE calendar*/
+    background: #020;
+	border: 10px solid #040;
+border-style:dotted solid double dashed; 
+}
+.kronolith-today, .kronolithViewDay .kronolith-today {
+/* CHANGE calendar*/
+    background-color: #040;
+}
+.kronolithEventsWeek div, 
+.kronolith-other-month {
+/* CHANGE calendar*/
+    background: #010;
+}
+.kronolith-minical table {
+    background-color: #000;
+}
+.kronolith-minical .kronolith-selected, .kronolith-minical table td.kronolith-minical-week {
+    background-color: #020;
+    color: #0A0;
+}
+.kronolith-minical table th, .kronolith-minical table td {
+    background-color: #040;
+}
+
+/* address book styles. */
+/*********************************************************/
+/*
+ * turba/themes/theme/screen.css
+ */
+
+
+/* Tab styles. */
+.tabset {
+    background: none;
+}
+.tabset li , 
+.tabset li.horde-active {
+    background: #010;
+}
+.tabset li.horde-active a ,
+.tabset li a 
+{
+    color: #0A0;
+}
+div.horde-resource-over[style],
+.text {
+    color: #0A0 !important;
+    background: #020 !important;
+}
+.header ,
+.header a,
+.turbaPager ,
+input.horde-default, a.horde-default ,
+.horde-resources div[style],
+input, select, textarea {
+    background-image: none;
+    background-color: #000 !important;
+    border: 1px solid #020 !important;
+    color: #0A0 !important;
+}
+div.vpRow[style] ,
+div.vpRowSelected[style] {
+    background-color: #000 !important;
+    color: #0A0 !important;
+	border-bottom: 1px solid #030 !important;
+}
+
+/* Contacts styles. */
+#contactstable #search {
+    width: 150px;
+}
+#contactstable #search_results, #contactstable #selected_addresses {
+    width: 100%;
 }

@@ -8,17 +8,15 @@
 
 /* Message ViewPort */
 /* Rows */
-div.msglist .vpRowHoriz.flagAnswered { /* this is overidden by imp/lib/Flag/Imap/Answered.php */
-    background-color: #B10;
+/* this is overidden by imp/lib/Flag/Imap/Answered.php if not properly nested */
+.msgwrite ,
+div.msglist .vpRowHoriz.flagAnswered div { 
+    background-color: #020;
 }
 
-div.vpRowSelected {
+div.msglist .vpRowHoriz.flagAnswered.vpRowSelected div{ 
     background-color: #030 !important;
     color: #fff;
-}
-
-div.vpRowSelected .msgflags.flagAnswered {
-    background-image: url("../graphics/flags/answered-inv.png");
 }
 
 
@@ -34,4 +32,15 @@ div.vpRowSelected .msgflags.flagAnswered {
 
 .msgHeaders a {
     color: #0A0; /* CHANGE */
+}
+
+
+/* kronolith styles. */
+/*********************************************************/
+/*
+ * kronolith/themes/theme/dynamic/screen.css
+ */
+/* Mini calendar */
+.kronolith-minical {
+    background-color: #020;
 }
