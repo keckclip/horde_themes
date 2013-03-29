@@ -50,10 +50,11 @@ a.horde-mainnavi:link, a.horde-mainnavi:visited, a.horde-mainnavi:active {
     display: block;
     color: #0A0;
 }
-.horde-dropdown ul {
+.horde-dropdown ul ,
+.horde-dropdown ul li {
     background: #020;
     background-color: #020;
-    border: 1px solid #040;
+    border-bottom: 1px solid #040;
 }
 
 .horde-point-left-active, 
@@ -103,20 +104,33 @@ background-image: none;
     background-color: #020; /* CHANGE */
 }
 
+/* main window */
+.control {
+    background: #020;
+    color: #0F0;
+}
+
+.horde-block-weather tr.rowEven td
+{
+    background-color: #010;  /* CHANGE */
+    border: 1px solid #050;
+}
+
 /* Slider. */
 .horde-splitbar-vert ,
 .horde-splitbar-horiz-handle , 
 .horde-splitbar-vert-handle {
     background-image: none;
     background-repeat: no-repeat;
-    background-color: #040;  /* CHANGE */
+    background-color: #020;  /* CHANGE */
 }
 
 
 /* Buttonbar. */
+.horde-buttonbar li ,
 .horde-buttonbar {
     background-image: none;
-    background-color: #030;  /* CHANGE */
+    background-color: #010;  /* CHANGE */
 }
 
 .horde-buttonbar, .horde-buttonbar a, .horde-buttonbar a:link,
@@ -155,6 +169,7 @@ background-image: none;
     background: #040;
     color: #0E0;
 }
+
 #horde-sidebar .horde-new-link a, .horde-new-link a {
     padding-left: 28px;
     margin: 5px 10px 0 10px;
@@ -229,14 +244,19 @@ a.horde-button, a.horde-default, a.horde-delete {
 {
     background-color: #030; /* CHANGE */
 }
+
+
 .kronolithMonthDay div.kronolith-event[style] 
 {
     background-color: #0A0 !important ; /* CHANGE */
 } 
+
+
 table.kronolith-view 
 {
     background-color: #060; /* CHANGE border */
 }
+
 table.kronolith-view td.kronolith-first-col,
 table.kronolith-view th.kronolith-first-col {
     width: 21px;
@@ -255,9 +275,10 @@ table.kronolith-view tr
 	border: 10px solid #040;
 border-style:dotted solid double dashed; 
 }
+
 .kronolith-today, .kronolithViewDay .kronolith-today {
 /* CHANGE calendar*/
-    background-color: #040;
+    background-color: #060;
 }
 .kronolithEventsWeek div, 
 .kronolith-other-month {
@@ -280,7 +301,11 @@ border-style:dotted solid double dashed;
     background-color: #020;
     border: 1px #040 solid;
 }
-
+.kronolith-minical .kronolith-today,
+.kronolith-minical .kronolith-today:hover,
+.kronolith-minical .kronolith-today a {
+    background-color: #060;
+}
 /* address book styles. */
 /*********************************************************/
 /*
@@ -333,10 +358,66 @@ div.vpRowSelected[style] {
 	border-bottom: 1px solid #030 !important;
 }
 
+.linedRow td.text {
+    background-color: #040 !important;
+}
+
+.linedRow td.text span[style] ,
+.linedRow td.text span a[style] {
+    background-color: #0A0 !important;
+}
+
+div.flagUnseen[style]
+{
+    background-color: #040 !important;
+    color: #0F0 !important;
+}
+
 /* Contacts styles. */
 #contactstable #search {
     width: 150px;
 }
 #contactstable #search_results, #contactstable #selected_addresses {
     width: 100%;
+}
+
+
+/* more Global default styles. */
+/*********************************************************/
+
+/* for Dashboard. */
+.headerbox div table td {
+    background: #040 !important;
+    background-color: #040 !important;
+    color: #0E0;
+}
+
+.rowOdd {
+    background: #040 !important;
+    background-color: #040 !important;
+}
+
+.rowEven {
+    background: #030 !important;
+    background-color: #030 !important;
+}
+
+input[disabled], input[disabled]:hover, textarea[disabled], option[disabled] {
+    background-color: #030;
+    color: #0A0;
+}
+
+
+.kronolith-event .kronolith-selected,
+.kronolith-view-head .kronolithViewDay td,
+.kronolith-view-head .kronolith-all-day,
+.kronolithViewDay td {
+    background-color: #030 !important;
+}
+
+.kronolith-weekend {
+/* CHANGE calendar*/
+    background: #020;
+	border: 10px solid #040;
+border-style:dotted solid double dashed; 
 }
