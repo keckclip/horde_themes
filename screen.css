@@ -271,14 +271,17 @@ table.kronolith-view tr
 }
 .kronolith-weekend, .kronolithViewDay .kronolith-weekend {
 /* CHANGE calendar*/
-    background: #020;
-	border: 10px solid #040;
+    background: #010;
+	border: 10px solid #030;
 border-style:dotted solid double dashed; 
 }
-
+.kronolithViewDay td {
+    height: 40px;
+    background-color: #030;
+}
 .kronolith-today, .kronolithViewDay .kronolith-today {
 /* CHANGE calendar*/
-    background-color: #060;
+    background-color: #0A0;
 }
 .kronolithEventsWeek div, 
 .kronolith-other-month {
@@ -408,16 +411,13 @@ input[disabled], input[disabled]:hover, textarea[disabled], option[disabled] {
 }
 
 
+/* CHANGE calendar
 .kronolith-event .kronolith-selected,
 .kronolith-view-head .kronolithViewDay td,
 .kronolith-view-head .kronolith-all-day,
 .kronolithViewDay td {
     background-color: #030 !important;
 }
+ * */
 
-.kronolith-weekend {
-/* CHANGE calendar*/
-    background: #020;
-	border: 10px solid #040;
-border-style:dotted solid double dashed; 
-}
+

@@ -49,22 +49,13 @@ div.msglist .vpRowHoriz.flagAnswered.vpRowSelected div{
     border: 1px #040 solid;
 }
 
-
-.kronolith-view-head .kronolithViewDay td,
-.kronolith-view-head .kronolith-all-day,
-.kronolithViewDay td {
-    background-color: #030 !important;
+.kronolith-view-head .kronolith-all-day {
+    background-color: #050 ;
 }
+ * */
 
 #kronolithViewWeek .kronolith-view-head .kronolith-event,
 #kronolithViewWorkweek .kronolith-view-head .kronolith-event {
     background-color: #050 !important;
     color: #0A0 !important; /* CHANGE */
-}
-
-.kronolith-weekend {
-/* CHANGE calendar*/
-    background: #020;
-	border: 10px solid #040;
-border-style:dotted solid double dashed; 
 }
