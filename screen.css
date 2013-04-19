@@ -283,20 +283,75 @@ border-style:dotted solid double dashed;
 /* CHANGE calendar*/
     background-color: #0A0;
 }
-.kronolithEventsWeek div, 
-.kronolith-other-month {
+.kronolithEventsWeek div { 
 /* CHANGE calendar*/
     background: #010;
 }
 .kronolith-minical table {
-    background-color: #000;
+    background-color: none;
 }
+/*
 .kronolith-minical .kronolith-selected, .kronolith-minical table td.kronolith-minical-week {
     background-color: #020;
     color: #0A0;
 }
 .kronolith-minical table th, .kronolith-minical table td {
     background-color: #040;
+}
+.kronolith-minical table th,
+.kronolith-minical table td.kronolith-minical-week {
+    background-color: #E60909;
+    color: #6d6d6d;
+}
+*/
+.kronolith-minical {
+    background: #010!important ;
+    background-color: none !important ;
+}
+.kronolith-minical table {
+    border-spacing: 1px;
+    border: 0;
+    background: none !important ;
+    background-color: none !important ;
+}
+.kronolith-minical td {
+    background: none;
+    background-color: none;
+    padding: 10px;
+    vertical-align: top;
+}
+.kronolith-minical table th, .kronolith-minical table td {
+    background: #030;
+    background-color: none;
+    height: 22px;
+    width: 22px;
+    padding: 1px;
+    text-align: center;
+    vertical-align: middle;
+}
+td.kronolith-other-month,   
+{
+    background: #030;
+    background-color: #030;
+}
+.kronolith-minical table td.kronolith-minical-week {
+    background: #000;
+    background-color: #000;
+    color: #090;
+}
+
+.kronolith-other-month   
+{
+    background: #020 !important;
+    background-color: #020;
+}
+.kronolith-minical .kronolith-other-month,
+.kronolith-minical .kronolith-other-month a {
+    color: #090;
+}
+.kronolith-minical .kronolith-selected {
+    background-color: #050;
+    color: #fff;
 }
 
 /* Event/task form dialogs */
