@@ -39,6 +39,15 @@ line-height: 150%;
     background-repeat: repeat-x;
     background-color: #020; /* CHANGE */
 }
+.treanACBox {
+  background: none;
+  border: 0px solid #d0d0d0;
+}
+
+.box {
+    border: 1px dashed #040;
+    background: none;
+}
 
 /* Topbar. */
 #horde-search #horde-search-input, #horde-search .horde-fake-input {
