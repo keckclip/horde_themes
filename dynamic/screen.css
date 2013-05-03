@@ -59,3 +59,24 @@ div.msglist .vpRowHoriz.flagAnswered.vpRowSelected div{
     background-color: #050 !important;
     color: #0A0 !important; /* CHANGE */
 }
+
+#kronolithViewAgenda td, #kronolithViewTasksBody td {
+    background-color: #010 !important;
+    color: #0A0 !important; /* CHANGE */
+}
+
+#kronolithViewAgenda .kronolith-event {
+    background-color: #020 !important;
+    font-weight: bold;
+    color: #0A0 !important; /* CHANGE */
+}
+#kronolithViewAgenda td.kronolith-first-col {
+    background-color: #030 !important;
+    font-weight: bold;
+    color: #0A0 !important; /* CHANGE */
+}
+#kronolithViewAgenda .kronolith-event .kronolithDate {
+    font-weight: normal;
+    color: #0A0;
+}
+

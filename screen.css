@@ -12,6 +12,40 @@ body {
     color: #0A0; /* CHANGE */
 }
 
+/* Tables. */
+table.stock {
+    border-top: 1px solid #030;
+    border-left: 1px solid #030;
+}
+table.horde-table th ,
+table.horde-table th.sortdown, table.horde-table th.sortup,
+table.stock th,th {
+    background: #030;
+    border-right: 1px solid #050;
+    border-bottom: 1px solid #060;
+    font-weight: bold;
+}
+table.horde-table td, 
+table.stock td,td {
+    border-right: 1px solid #050;
+    border-bottom: 1px solid #050;
+    background: #010;
+}
+
+.kronolithTaskCol .kronolithTask {
+    background: #010 !important;
+    color: #0A0 !important; /* CHANGE */
+}
+.sortdown {
+    background-color: transparent;
+    background: url("graphics/az.png") left center no-repeat;
+    text-indent: 15px;
+}
+
+
+.pri-3 {
+    color: #0A0;
+}
 /* Sidebar. */
 #horde-sidebar {
     background-color: #000; /* CHANGE */
@@ -431,9 +465,9 @@ input, select, textarea {
 .linedRow, tr.linedRow td, table.linedRow td, ul.linedRow li ,
 div.vpRow[style] ,
 div.vpRowSelected[style] {
-    background-color: #000 !important;
+    background-color: #010 !important;
     color: #0A0 !important;
-	border-bottom: 1px solid #030 !important;
+	border-bottom: 1px solid #050 !important;
 }
 
 .linedRow td.text {
