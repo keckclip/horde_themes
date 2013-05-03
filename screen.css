@@ -25,6 +25,7 @@ table.stock th,th {
     border-bottom: 1px solid #060;
     font-weight: bold;
 }
+
 table.horde-table td, 
 table.stock td,td {
     border-right: 1px solid #050;
@@ -32,6 +33,7 @@ table.stock td,td {
     background: #010;
 }
 
+.base-category,
 .kronolithTaskCol .kronolithTask {
     background: #010 !important;
     color: #0A0 !important; /* CHANGE */
