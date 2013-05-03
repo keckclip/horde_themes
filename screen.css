@@ -46,6 +46,17 @@ line-height: 150%;
     color: #0A0;
 }
 
+#horde-search #horde-search-input {
+    width: 80%;
+    padding: 0 5px 0 5px;
+}
+
+#horde-search .horde-fake-input #horde-search-input {
+    padding: 0 5px 0 0;
+    width: 80%;
+    margin: 0;
+    float: none;
+}
 a.horde-mainnavi:link, a.horde-mainnavi:visited, a.horde-mainnavi:active {
     display: block;
     color: #0A0;
