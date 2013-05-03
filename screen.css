@@ -41,6 +41,7 @@ table.stock td,td {
     background: #010;
 }
 
+.noteBody,
 .base-category,
 .kronolithTaskCol .kronolithTask {
     background: #010 !important;
