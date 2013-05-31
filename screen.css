@@ -469,7 +469,7 @@ input.horde-default, a.horde-default ,
 input, select, textarea {
     background-image: none;
     background-color: #010 !important;
-    border: 1px solid #020 !important;
+    border: 1px solid #060 !important;
     color: #0A0 !important;
 }
 
