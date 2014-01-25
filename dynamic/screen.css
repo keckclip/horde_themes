@@ -39,6 +39,15 @@ div.msglist .vpRowHoriz.flagAnswered.vpRowSelected div{
     color: #0A0; /* CHANGE */
 }
 
+/* fix mail subject header width */
+div.msgFrom {
+    left: 80px;
+    width: 260px;
+}
+div.msgSubject {
+    left: 350px;
+    right: 225px;
+}
 
 /* kronolith styles. */
 /*********************************************************/
