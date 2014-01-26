@@ -21,7 +21,6 @@ div.msglist .vpRowHoriz.flagAnswered div {
 
 div.msglist .vpRowHoriz.flagAnswered.vpRowSelected div{ 
     background-color: #030 !important;
-    color: #fff;
 }
 
 
