@@ -1,0 +1,500 @@
+
+/* Global default styles. */
+/*********************************************************/
+/*
+ * themes/theme/screen.css
+ */
+
+
+body {
+/* CHANGE */
+    background: #000; /* CHANGE */
+    color: #0A0; /* CHANGE */
+}
+
+/* Sidebar. */
+#horde-sidebar {
+    background-color: #000; /* CHANGE */
+}
+
+#horde-sidebar a {
+    color: #0A0; /* CHANGE */
+}
+
+.horde-new {
+    background-image: none;
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #787878;
+    overflow: hidden;
+    font-size: 100%;
+line-height: 150%;
+    font-weight: bold;
+    color: #0D0;
+    text-shadow: -1px -1px 0px #000;
+}
+
+.horde-subnavi-active, .horde-subnavi:hover {
+    height: 20px;
+    background-image: none;
+    background-repeat: repeat-x;
+    background-color: #020; /* CHANGE */
+}
+
+/* Topbar. */
+#horde-search #horde-search-input, #horde-search .horde-fake-input {
+    background: #000;
+    color: #0A0;
+}
+
+a.horde-mainnavi:link, a.horde-mainnavi:visited, a.horde-mainnavi:active {
+    display: block;
+    color: #0A0;
+}
+.horde-dropdown ul ,
+.horde-dropdown ul li {
+    background: #020;
+    background-color: #020;
+    border-bottom: 1px solid #040;
+}
+
+.horde-dropdown ul li.arrow {
+    background-image: url("graphics/navi-subnavi.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.horde-point-left-active, 
+.horde-point-center-active,
+.horde-point-right-active {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: #020; /* CHANGE */
+}
+
+.horde-point-arrow, .horde-point-arrow-active {
+    float: right;
+    width: 13px;
+    height: 8px;
+    margin: 5px 2px 0 5px;
+    background-image: url("graphics/navi-arrow-normal.png");
+    background-repeat: no-repeat;
+    text-indent: -10000px;
+    overflow: hidden;
+}
+
+/* added to get green icons in dropdown menus */
+.horde-popdown {
+    background-image: url("graphics/popdown.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    float: right;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+
+#horde-head {
+    width: 100%;
+    height: 34px;
+    background-image: none;
+    background-repeat: none; 
+    background-color: #000;
+    border-bottom: 2px solid #000;
+}
+#horde-logo {
+    float: left;
+    width: 200px;
+    height: 34px;
+/*
+background-image: none;
+    background-color: #000; 
+ */    
+    background-image: url("graphics/horde_logo.png");
+    background-repeat: no-repeat;
+}
+
+#horde-version {
+    display: none;
+    float: left;
+    height: 16px;
+    padding: 18px 10px 0px 0px;
+    font-size: 90%;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
+}
+/*horde prefs icon changed*/
+.horde-icon-settings {
+    background-image: url("graphics/settings.png");
+    background-repeat: no-repeat;
+}
+
+#horde-search-icon {
+    float: left;
+    margin: 7px 0 0 7px;
+}
+
+/*logout icon changed*/
+#horde-logout {
+    float: right;
+    width: 20px;
+    height: 29px;
+    margin: 6px 10px 0 0;
+    background-image: url("graphics/logout.png");
+    background-repeat: no-repeat;
+}
+
+
+/* Styles for email-like messages. */
+.quoted1 {
+    color: #0A0;
+    border-color: #606;
+    background-color: #020; /* CHANGE */
+}
+
+/* main window */
+.control {
+    background: #020;
+    color: #0F0;
+}
+
+.horde-block-weather tr.rowEven td
+{
+    background-color: #010;  /* CHANGE */
+    border: 1px solid #050;
+}
+
+/* Slider. */
+.horde-splitbar-vert ,
+.horde-splitbar-horiz-handle , 
+.horde-splitbar-vert-handle {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: #020;  /* CHANGE */
+}
+
+
+/* Buttonbar. */
+.horde-buttonbar li ,
+.horde-buttonbar {
+    background-image: none;
+    background-color: #010;  /* CHANGE */
+}
+
+.horde-buttonbar, .horde-buttonbar a, .horde-buttonbar a:link,
+.horde-buttonbar a:visited, .horde-buttonbar a:active {
+    color: #0A0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.horde-buttonbar li:hover, .horde-buttonbar li.horde-active {
+    background-repeat: no-repeat, repeat-x;
+    background-image: none;
+    background-color: #040;  /* CHANGE */
+}
+
+.horde-form-buttons {
+    background-color: #020;
+}
+
+/* Horde UI standard tables */
+.horde-table-header, table.horde-table thead tr {
+    background-image: none;
+    background-repeat: repeat-x;
+}
+/*nessesary to get mnemo table head right*/
+table.horde-table th {
+    background-image: url("graphics/tablehead-bg.png");
+    background-repeat: repeat-x;
+}
+
+.horde-table-header a, table.horde-table thead a {
+    color: #0A0;
+}
+/* Main body. */
+#horde-body {
+    border-bottom: 1px solid #050;
+}
+
+.headerbox {
+    border: 1px solid #060;
+    border-top-width: 0;
+    background: #040;
+    color: #0E0;
+}
+
+#horde-sidebar .horde-new-link a, .horde-new-link a {
+    padding-left: 28px;
+    margin: 5px 10px 0 10px;
+    color: #0B0;
+}
+
+
+.horde-table-header div {
+    background-color: #050;  /* CHANGE */
+    color: #0E0;
+    font-weight: bold;
+}
+.horde-table-header .horde-split-left,
+table.horde-table thead .horde-split-left,
+.horde-table-header .horde-split-right,
+table.horde-table thead .horde-split-right {
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+/* Sub bar. */
+#horde-sub {
+    background-color: #010;
+}
+
+
+a ,
+#horde-date,
+#horde-info,
+#horde-info a {
+    color: #0A0;
+}
+
+/* imp styles. */
+/*********************************************************/
+/*
+ * imp/themes/theme/screen.css
+ */
+
+/* Style for HTML data iframe. */
+.htmlMsgData {
+    background-color: #0A0;  /* CHANGE */
+}
+
+select option ,
+.mimePartInfo div ,
+.mimeStatusMessageTable {
+    background: #020;
+    border: 1px solid #030;    
+color: #0A0;
+}
+
+.mimePartWrap, .mimePartWrapValid, .mimePartWrapInvalid {
+    border: 1px solid #020;
+}
+
+input[type="submit"], input[type="button"], input[type="reset"],
+a.horde-button, a.horde-default, a.horde-delete {
+    background-image: none;
+    background-repeat: repeat-x;
+    border: 1px solid #020;
+    color: #0A0;
+}
+/* kronolith styles. */
+/*********************************************************/
+/*
+ * kronolith/themes/theme/screen.css
+ */
+
+/* Calendar styles. */
+.kronolithMonthDay  
+{
+    background-color: #030; /* CHANGE */
+}
+
+/*added for block month-view*/
+.monthgrid {
+    background: #020;
+}
+
+
+.kronolithMonthDay div.kronolith-event[style] 
+{
+    background-color: #0A0 !important ; /* CHANGE */
+} 
+
+
+table.kronolith-view 
+{
+    background-color: #060; /* CHANGE border */
+}
+
+table.kronolith-view td.kronolith-first-col,
+table.kronolith-view th.kronolith-first-col {
+    width: 21px;
+    background-color: #000; 
+    vertical-align: middle;
+/*    padding: 9px 0 0;*/
+}
+table.kronolith-view tr
+{
+/* CHANGE calendar*/
+    background-color: #000;
+}
+.kronolith-weekend, .kronolithViewDay .kronolith-weekend {
+/* CHANGE calendar*/
+    background: #020;
+	border: 10px solid #040;
+border-style:dotted solid double dashed; 
+}
+
+.kronolith-today, .kronolithViewDay .kronolith-today {
+/* CHANGE calendar*/
+    background-color: #060;
+}
+.kronolithEventsWeek div, 
+.kronolith-other-month {
+/* CHANGE calendar*/
+    background: #010;
+}
+.kronolith-minical table {
+    background-color: #000;
+}
+.kronolith-minical .kronolith-selected, .kronolith-minical table td.kronolith-minical-week {
+    background-color: #020;
+    color: #0A0;
+}
+.kronolith-minical table th, .kronolith-minical table td {
+    background-color: #040;
+}
+
+/* Event/task form dialogs */
+.kronolithDialog {
+    background-color: #020;
+    border: 1px #040 solid;
+}
+.kronolith-minical .kronolith-today,
+.kronolith-minical .kronolith-today:hover,
+.kronolith-minical .kronolith-today a {
+    background-color: #060;
+}
+/* address book styles. */
+/*********************************************************/
+/*
+ * turba/themes/theme/screen.css
+ */
+
+
+/* Tab styles. */
+.tabset {
+    background: none;
+}
+.tabset li , 
+.tabset li.horde-active {
+    background: #010;
+}
+.tabset li.horde-active a ,
+.tabset li a 
+{
+    color: #0A0;
+}
+
+.selected ,
+div.horde-resource-over[style],
+.text {
+    color: #0A0 !important;
+    background: #020 !important;
+}
+
+#horde-navigation {
+    color: #0A0;
+}
+
+.header ,
+.header a,
+.turbaPager ,
+input.horde-default, a.horde-default ,
+.horde-resources div[style],
+input, select, textarea {
+    background-image: none;
+    background-color: #010 !important;
+    border: 1px solid #020 !important;
+    color: #0A0 !important;
+}
+
+.linedRow, tr.linedRow td, table.linedRow td, ul.linedRow li ,
+div.vpRow[style] {
+    background-color: #000 !important;
+    color: #0A0 !important;
+	border-bottom: 1px solid #030 !important;
+}
+
+div.vpRowSelected[style] {
+    background-color: #000 !important;
+    color: #fff !important; /*changed to white for marked messages*/
+        border-bottom: 1px solid #030 !important;
+}
+
+
+.linedRow td.text {
+    background-color: #040 !important;
+}
+
+.linedRow td.text span[style] ,
+.linedRow td.text span a[style] {
+    background-color: #0A0 !important;
+}
+
+div.flagUnseen[style]
+{
+    background-color: #040 !important;
+    color: #0F0 !important;
+}
+
+/* Contacts styles. */
+#contactstable #search {
+    width: 150px;
+}
+#contactstable #search_results, #contactstable #selected_addresses {
+    width: 100%;
+}
+
+
+/* more Global default styles. */
+/*********************************************************/
+
+/* for Dashboard. */
+.headerbox div table td {
+    background: #040 !important;
+    background-color: #040 !important;
+    color: #0E0;
+}
+
+.rowOdd {
+    background: #040 !important;
+    background-color: #040 !important;
+}
+
+.rowEven {
+    background: #030 !important;
+    background-color: #030 !important;
+}
+
+input[disabled], input[disabled]:hover, textarea[disabled], option[disabled] {
+    background-color: #030;
+    color: #0A0;
+}
+
+
+.kronolith-event .kronolith-selected,
+.kronolith-view-head .kronolithViewDay td,
+.kronolith-view-head .kronolith-all-day,
+.kronolithViewDay td {
+    background-color: #030 !important;
+}
+
+.kronolith-weekend {
+/* CHANGE calendar*/
+    background: #020;
+	border: 10px solid #040;
+border-style:dotted solid double dashed; 
+}
+
+/* Mnemo styles */
+/*********************************************************/
+
+table#notepad-list th {
+    padding: 3px;
+    background: #000;
+    border-right: 1px solid #ccc;
+    text-align: left;
+}
